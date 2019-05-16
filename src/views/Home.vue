@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div>
+      <label>
+        都市名
+        <input type="text" v-model="cityName" />
+      </label>
+      <button @click="submit">Enter</button>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "home",
-  components: {
-    HelloWorld
+  data() {
+    return {
+      cityName: ""
+    };
+  },
+  methods: {
+    submit() {
+      this.$router.push(`/city/${this.cityName}`);
+    }
   }
 };
 </script>
