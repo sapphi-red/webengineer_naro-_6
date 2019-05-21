@@ -7,7 +7,8 @@
       <router-link to="/country">Countries</router-link> |
       <router-link to="/country/Japan">Japan</router-link> |
       <router-link to="/city/Tokyo">Tokyo</router-link> |
-      <router-link to="/login">Login</router-link>
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/logout">Logout</router-link>
     </div>
     <router-view />
   </div>

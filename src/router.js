@@ -4,6 +4,7 @@ import axios from "axios";
 import Home from "./views/Home.vue";
 import Axios from "./views/Axios.vue";
 import Login from "./views/Login.vue";
+import Logout from "./views/Logout.vue";
 import City from "./views/City.vue";
 import Countries from "./views/Countries.vue";
 import Country from "./views/Country.vue";
@@ -35,6 +36,11 @@ const router = new Router({
       meta: {
         isPublic: true
       }
+    },
+    {
+      path: "/logout",
+      name: "logout",
+      component: Logout
     },
     {
       path: "/city/:cityName",
